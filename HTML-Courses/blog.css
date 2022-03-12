@@ -1,0 +1,65 @@
+header h1                   /*Selector*/
+{                           /*Declaración*/
+    color: white;          /* Propiedad y valor*/  
+    text-align: start;
+    font-family: Verdana;
+    font-size: 40px;
+    margin-left: 8%;
+    
+}
+
+/*header                       /*Selector por nombre de etiqueta
+{
+    border: 1mm solid red;
+    background-color: beige;
+}*/
+
+.parrafo
+{
+    color: white;
+}
+
+p.musica                     /*Selector de un elemnto especifico dentro de una clase*/
+{
+    color:cadetblue;
+}
+
+.musica                     /*Selector mediante class. Seran afectados todos los elemntos de la clase musica*/
+{
+    color: black
+   
+}
+
+h2.musica
+{
+    background-color: lightslategrey;
+    border: 2px solid white;
+    padding: 5px 10px 5px;
+    width: fit-content;
+    box-sizing: border-box;
+    margin: initial;
+}
+
+#piepag                     /*Selector mediante id. Usado para seleccionar un unico elemento*/
+{
+    background-color: grey;
+    text-align: center;
+    color: black;
+}
+
+body
+{   /*Colocamos una imagen de fondo*/
+    background-image: url("images/skyrim.jpg");  
+    /*Especificamos si es fija o desplazable*/
+    background-attachment: fixed;
+    /*Definimos el tamaño de imagen de fondo*/
+    background-size: cover;
+
+}
+
+p.parrafo
+{
+    border: cyan solid  2px;
+    width: fit-content;
+    padding: 5px 10px 5px;
+}

@@ -1,0 +1,94 @@
+ <!--Indicamos al navegador que el documento está basado en el estándar HTML5-->
+<!DOCTYPE html>     
+<!-- Representa la raíz de un documento HTML-->                    
+<html lang="es">     
+    <!--Representa una colección de metadatos acerca del documento 
+    incluyendo enlaces a, o definiciones de, scripts y hojas de estilo-->               
+    <head>   
+        <!--Definimos el tituilo de la pagina WEB-->                            
+        <title>First Web Page</title>           
+        <!--Definimos metadatos para hacer descripciones -->
+        <meta name="descripción" content="Esta es mi primer pagina web"/> 
+        <meta name="autor" content="Enrique"/>
+        <meta name="keywords" content="Mi primer titulo, mi primer pagina"/>
+    </head>
+    <!--Aqui se definirá todo lo que se mostrará en la pagina WEB-->
+    <body>
+        <header>                                <!--Definimos el titulo de cabecera que se mostrará en la página-->
+            <img src="ek.png" width="50"/><h1>Mi Blog</h1>                    <!--h1 define el tamaño del texto-->
+        </header>
+        <nav>                                   <!--Definimos el contenido que será la sección de navegación de la web-->
+            <ul>                                <!--Definimos una lista desordenada-->  
+                <li>Principal</li>              <!--Definimos los elementos de la lista-->
+                <li>Ayuda</li>
+                <li>Contacto</li>
+            </ul>
+            <ol>
+                <li>Principal</li>              <!--Definimos los elementos de la lista-->
+                <li>Ayuda</li>
+                    <ol>
+                        <li style="list-style-type:lower-roman;">sugerencia</li>    
+                    </ol>
+                <li>Contacto</li>
+            </ol>
+        </nav>
+          <!--Apertura y cierre de un formulario de una página web-->
+        <form>                                
+            <!--Definimos el nombre o título de un control del formulario.-->
+            <label for="nombre">Nombre</label>               
+            <!--Agregamos un campo de introducción de datos para el usuario. -->
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre"/> 
+            <br>
+            <label for="comentario">Comentario</label>
+            <!--Añadimos un campo para introducir texto-->
+            <textarea cols="50 "rows="10 "id="comentario" name="comentario"></textarea>  
+            <br>
+            <button type="button">Tipo Boton</button>     
+            <button type="reset">Tipo Reset</button>     
+            <button type="submit">Tipo Submit</button>                    
+        </form>
+        <section>                               <!--Definimos una seccion-->
+            <article>                           <!--Definimos un contenido independiente en la pagina -->
+                <hgroup>                        <!--Etiqueta para agrupar y jerarquizar los titulos y subtitulos-->
+                    <h2>Titulo del primer articulo</h2>
+                    <h1>Subtitulo del primer articulo</h1>
+                </hgroup>
+                
+                <time>Publicado el 24/09/2021</time>
+                <!--Definimos un parrafo-->
+                <p> Estoy empezando a programar en HTML para convertirme 
+                    en un <span style="color: darkred;">desarrollador Backend.</span> 
+                </p>
+                <!--Utilizada para “romper” entre dos secciones de una web. Usada comúnmente como separador.-->
+                <hr> 
+                <!--Indicamos que la url es una página web-->
+                <address>                                                     
+                    <!--Creamos un hiperenlace en el documento HTML-->
+                    <a target="_blank" href="https://www.google.com.mx">Google</a> 
+                </address>
+            </article>                                         
+                
+            <article>
+                <hgroup>
+                    <h1>Titulo del segundo articulo</h1>
+                    <h2>Subtitulo del segundo articulo</h2>
+                </hgroup>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  <!--con br definimos saltos de linea-->
+                    Quia odit tenetur repellat similique velit dolores facilis <br>
+                    dignissimos adipisci dolorem accusamus quo quibusdam harum, <br>
+                    ea reprehenderit rem architecto amet nesciunt consectetur!<br>
+                </p>
+                <img src="esime.jpg" width="200" />     <!--Mostramos un imagen en la página web-->
+            </article>
+        </section>
+        <aside>             <!--Definimos contenido adicional a la página-->
+            Archivo
+            Acerca De
+        </aside>
+        <footer>            <!--Definimos un pie de página-->
+            Derechos Reservados 2020-2021
+        </footer>
+    </body>
+</html>
+
+
